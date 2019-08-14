@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_08_14_190959) do
 
-  create_table "quizzes", force: :cascade do |t|
+  create_table "questions", force: :cascade do |t|
     t.string "text"
     t.string "answer_one"
     t.string "answer_two"

@@ -1,6 +1,6 @@
-class CreateQuizTable < ActiveRecord::Migration[5.2]
+class CreateQuestionsTable < ActiveRecord::Migration[5.2]
   def change
-    create_table :quizzes do |t|
+    create_table :questions do |t|
       t.string :text
       t.string :answer_one
       t.string :answer_two

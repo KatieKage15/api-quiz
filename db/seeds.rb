@@ -4,6 +4,6 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-Quiz.create(text: "What type of animal is a seahorse?", answer_one: "Crustacean", answer_two: "Arachnid", answer_three: "Fish")
-Quiz.create(text: "What are female elephants called?", answer_one: "Mares", answer_two: "Cows", answer_three: "Sows")
-Quiz.create(text: "Which of the following animals sleep standing up?", answer_one: "Flamingos", answer_two: "Gorillas", answer_three: "Camels")
+Question.create(text: "What type of animal is a seahorse?", answer_one: "Crustacean", answer_two: "Arachnid", answer_three: "Fish")
+Question.create(text: "What are female elephants called?", answer_one: "Mares", answer_two: "Cows", answer_three: "Sows")
+Question.create(text: "Which of the following animals sleep standing up?", answer_one: "Flamingos", answer_two: "Gorillas", answer_three: "Camels")
