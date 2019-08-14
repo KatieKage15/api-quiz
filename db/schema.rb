@@ -10,18 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_13_161252) do
+ActiveRecord::Schema.define(version: 2019_08_14_184640) do
 
-  create_table "category_tables", force: :cascade do |t|
-    t.string "name"
+  create_table "answers_tables", force: :cascade do |t|
+    t.string "answer_one"
+    t.string "answer_two"
+    t.string "answer_three"
+    t.string "question_id"
   end
 
-  create_table "questions", force: :cascade do |t|
-    t.string "answer"
+  create_table "questions_tables", force: :cascade do |t|
     t.string "sentence"
-    t.integer "category_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

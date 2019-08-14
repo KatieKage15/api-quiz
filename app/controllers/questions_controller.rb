@@ -1,5 +1,4 @@
 class QuestionsController < ApplicationController
-
     def index
         @questions = Question.all
         render json: @questions
@@ -10,12 +9,13 @@ class QuestionsController < ApplicationController
     end
 
     def create
-        @question = Question.new(question_params)
+        question = Question.new(question_params)
     end
 
 
     private
-      def question_params
-          params.require(:question).permit(:answer, :category_id, :sentence)
-      end
+
+        def question_params
+            params.require(:question).permit(:sentence)
+        end
 end
